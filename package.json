@@ -1,13 +1,16 @@
 {
-  "name": "dstt",
+  "name": "yoga-server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "seedDB": "node ./prisma/prisma_seed.js",
+    "install": "npm install",
+    "init": "node index.js",
+    "build": "npm run install && npn run seedDB && npm run init",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "faisal",
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^4.7.1",
