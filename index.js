@@ -3,7 +3,7 @@ const app = express();
 const cors = require("cors");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
-require("dotenv").config(); // for development purposes. comment before production
+// require("dotenv").config(); // for development purposes. comment before production
 const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 async function check_for_existing_user(email, phone) {
